@@ -17,6 +17,9 @@ func main() {
 		return
 	}
 
+	admin := user.NewAdmin("user@example.com", "password")
+	admin.OutputUserDetails()
+
 	appUser.OutputUserDetails()
 	appUser.ClearUserName()
 	appUser.OutputUserDetails()
